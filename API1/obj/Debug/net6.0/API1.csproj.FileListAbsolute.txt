@@ -128,3 +128,8 @@ C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\obj\Debug\net6.0\refi
 C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\obj\Debug\net6.0\API1.pdb
 C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\obj\Debug\net6.0\API1.genruntimeconfig.cache
 C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\obj\Debug\net6.0\ref\API1.dll
+C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Adrien Plasse\Documents\GitHub\C#\API-CSharp\API1\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

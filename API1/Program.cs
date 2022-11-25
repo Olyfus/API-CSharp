@@ -1,4 +1,5 @@
 using API1.DBContext;
+using API1.Models;
 using API1.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,6 +22,15 @@ builder.Services.AddCors( options =>
         .AllowAnyMethod()
         .AllowAnyHeader();
     });
+});
+
+builder.Services.AddIdentity<User, Roles>(options =>
+{
+    options.Password.RequiredLength = 8;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireUppercase = true;
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+    options.Lockout.MaxFailedAccessAttempts = 5;
 });
 
 builder.Services.AddScoped<ITeacherRepositories, TeacherRepositories>();
