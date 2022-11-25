@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adrien Plasse\\source\\repos\\API1\\API1\\API1.csproj": {}
+    "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\C#\\API-CSharp\\API1\\API1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adrien Plasse\\source\\repos\\API1\\API1\\API1.csproj": {
+    "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\C#\\API-CSharp\\API1\\API1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrien Plasse\\source\\repos\\API1\\API1\\API1.csproj",
+        "projectUniqueName": "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\C#\\API-CSharp\\API1\\API1.csproj",
         "projectName": "API1",
-        "projectPath": "C:\\Users\\Adrien Plasse\\source\\repos\\API1\\API1\\API1.csproj",
+        "projectPath": "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\C#\\API-CSharp\\API1\\API1.csproj",
         "packagesPath": "C:\\Users\\Adrien Plasse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrien Plasse\\source\\repos\\API1\\API1\\obj\\",
+        "outputPath": "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\C#\\API-CSharp\\API1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adrien Plasse\\AppData\\Roaming\\NuGet\\NuGet.Config",
