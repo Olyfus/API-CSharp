@@ -1,6 +1,7 @@
 using API1.DBContext;
 using API1.Models;
 using API1.Repositories;
+using API1.settings;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +25,7 @@ builder.Services.AddCors( options =>
     });
 });
 
+
 builder.Services.AddIdentity<User, Roles>(options =>
 {
     options.Password.RequiredLength = 8;
@@ -33,11 +35,18 @@ builder.Services.AddIdentity<User, Roles>(options =>
     options.Lockout.MaxFailedAccessAttempts = 5;
 });
 
+
 builder.Services.AddScoped<ITeacherRepositories, TeacherRepositories>();
 
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false)
     .Build();
+
+builder.Services.Configure<JwtSettings>(configuration.GetSection("Jwt"));
+
+var jwtSettings = configuration.GetSection("Jwt").Get<JwtSettings>();
+
+builder.Services.AddAuth(jwtSettings);
 
 builder.Services.AddDbContext<SchoolDBContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
@@ -52,7 +61,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseAuth();
 
 app.MapControllers();
 
