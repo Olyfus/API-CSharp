@@ -1,0 +1,7 @@
+D:\Cours\SIO 2\POO\C#\RoguePalace\RoguePalaceAPI\RoguePalaceAPI\obj\Debug\net6.0\RoguePalaceAPI.csproj.AssemblyReference.cache
+D:\Cours\SIO 2\POO\C#\RoguePalace\RoguePalaceAPI\RoguePalaceAPI\obj\Debug\net6.0\RoguePalaceAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cours\SIO 2\POO\C#\RoguePalace\RoguePalaceAPI\RoguePalaceAPI\obj\Debug\net6.0\RoguePalaceAPI.AssemblyInfoInputs.cache
+D:\Cours\SIO 2\POO\C#\RoguePalace\RoguePalaceAPI\RoguePalaceAPI\obj\Debug\net6.0\RoguePalaceAPI.AssemblyInfo.cs
+D:\Cours\SIO 2\POO\C#\RoguePalace\RoguePalaceAPI\RoguePalaceAPI\obj\Debug\net6.0\RoguePalaceAPI.csproj.CoreCompileInputs.cache
+D:\Cours\SIO 2\POO\C#\RoguePalace\RoguePalaceAPI\RoguePalaceAPI\obj\Debug\net6.0\RoguePalaceAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Cours\SIO 2\POO\C#\RoguePalace\RoguePalaceAPI\RoguePalaceAPI\obj\Debug\net6.0\RoguePalaceAPI.MvcApplicationPartsAssemblyInfo.cache
