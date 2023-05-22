@@ -12,20 +12,20 @@ namespace RoguePalaceAPI.Repositories
             _dbContext = dbContext;
         }
 
-        public List<User> GetUsers()
+        public List<User> GetUser()
         {
-            return _dbContext.Users.ToList();
+            return _dbContext.User.ToList();
         }
 
         public User GetUserByName(string email)
         {
-            return _dbContext.Users.Where(t => t.Email == email).FirstOrDefault();
+            return _dbContext.User.Where(t => t.Email == email).FirstOrDefault();
         }
 
         public void DeleteUser(string email)
         {
             User user = GetUserByName(email);
-            _dbContext.Users.Remove(user);
+            _dbContext.User.Remove(user);
             _dbContext.SaveChanges();
         }
     }

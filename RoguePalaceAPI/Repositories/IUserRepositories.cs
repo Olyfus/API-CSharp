@@ -5,7 +5,7 @@ namespace RoguePalaceAPI.Repositories
 {
     public interface IUserRepositories
     {
-        List<User> GetUsers();
+        List<User> GetUser();
         User GetUserByName(string email);
         void DeleteUser(string email);
 

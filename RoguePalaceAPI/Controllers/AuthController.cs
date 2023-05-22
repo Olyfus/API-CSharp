@@ -35,6 +35,7 @@ namespace RoguePalaceAPI.Controllers
                 UserName = userSignUpDto.Email,
                 LastName = userSignUpDto.LastName,
                 FirstName = userSignUpDto.FirstName,
+                Pseudo = userSignUpDto.Pseudo,
             };
 
             var userCreateResult = await _userManager.CreateAsync(user, userSignUpDto.Password);
