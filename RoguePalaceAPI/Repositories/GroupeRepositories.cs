@@ -34,19 +34,24 @@ namespace RoguePalaceAPI.Repositories
 
         public void CreateGroupe(Groupe groupe)
         {
-
+            _context.Groupes.Add(groupe);
+            _context.SaveChanges();
         }
 
         public void UpdateGroupe(UpdateGroupeDto newGroupe, int oldGroupeId )
         {
-
+            Groupe groupe = GetGroupeById(oldGroupeId);
+            groupe.Name = newGroupe.Name;
+            groupe.NombreParticipant = newGroupe.NombreParticipant;
+            _context.Groupes.Update(groupe);
+            _context.SaveChanges();
         }
 
         public void DeleteGroupe(int id)
         {
-
+            Groupe groupe = GetGroupeById(id);
+            _context.Groupes.Remove(groupe);
+            _context.SaveChanges();
         }
     }
 }
-
-            // return _context.Groupe.Where(g => g.GroupeId == id).FirstOrDefault();

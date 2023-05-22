@@ -36,7 +36,6 @@ builder.Services.AddIdentity<User, Roles>(options =>
     .AddEntityFrameworkStores<RoguePalaceDBContext>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddScoped<IUserRepositories, UserRepositories>();
 builder.Services.AddScoped<IGroupeRepositories, GroupeRepositories>();
 builder.Services.AddScoped<ICharacterRepositories, CharacterRepositories>();
 

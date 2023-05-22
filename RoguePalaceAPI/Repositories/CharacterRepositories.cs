@@ -12,26 +12,29 @@ namespace RoguePalaceAPI.Repositories
             _context = context;
         }
 
-        public Character GetById(int id)
+        public Character GetCharacterById(int id)
         {
             return _context.Characters.Where(c => c.CharacterId == id).FirstOrDefault();
         }
-        public List<Character> GetAll()
+        public List<Character> GetAllCharacter()
         {
             return _context.Characters.ToList();
         }
-        public void Create(Character character)
+        public void CreateCharacter(Character character)
         {
             _context.Characters.Add(character);
             _context.SaveChanges();
         }
-        public void Update(UpdateCharacterDto newCharacter, int oldCharacterId)
+        public void UpdateCharacter(UpdateCharacterDto newCharacter, int oldCharacterId)
         {
-            //_context.Characters.Update()
+            Character character = GetCharacterById(oldCharacterId);
+            character.Level = newCharacter.Level;
+            _context.Characters.Update(character);
+            _context.SaveChanges();
         }
-        public void Delete(int characterId)
+        public void DeleteCharacter(int characterId)
         {
-            Character character = GetById(characterId);
+            Character character = GetCharacterById(characterId);
             _context.Characters.Remove(character);
             _context.SaveChanges();
         }

@@ -1,16 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using RoguePalaceAPI.Models;
 
 namespace RoguePalaceAPI.DBContext
 {
-    public class RoguePalaceDBContext : DbContext
+    public class RoguePalaceDBContext : IdentityDbContext<User, Roles, Guid>
     {
         public RoguePalaceDBContext(DbContextOptions<RoguePalaceDBContext> options) : base(options)
         {
 
         }
         public DbSet<Character> Characters { get; set; }
-        public DbSet<User> User { get; set; }
         public DbSet<Groupe> Groupes { get; set; }
 
     }

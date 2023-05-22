@@ -6,10 +6,11 @@ namespace RoguePalaceAPI.Models
     {
         public int CharacterId { get; set; }
         public string Name { get; set; }
+        public int Level { get; set; }
         public int GroupeId { get; set; }
         [ForeignKey("GroupeId")]
-
-        public string Pseudo { get; set; }
+        public string Race { get; set; }
+        public string Class { get; set; }
 
     }
 }

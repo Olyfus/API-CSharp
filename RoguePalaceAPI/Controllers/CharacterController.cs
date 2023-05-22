@@ -16,7 +16,6 @@ namespace RoguePalaceAPI.Controllers
         {
             _characterRepository = characterRepository;
         }
-        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult CreateCharacter(CreateCharacterDto characterDto)
         {
@@ -25,7 +24,7 @@ namespace RoguePalaceAPI.Controllers
 
             };
 
-            _characterRepository.Create(character);
+            _characterRepository.CreateCharacter(character);
 
             return Ok();
         }
@@ -33,31 +32,31 @@ namespace RoguePalaceAPI.Controllers
         [HttpGet("{characterId}")]
         public ActionResult<Character> GetCharacterById(int characterId)
         {
-            Character character = _characterRepository.GetById(characterId);
+            Character character = _characterRepository.GetCharacterById(characterId);
             if (character == null)
             {
                 return NotFound();
             }
-            return _characterRepository.GetById(characterId);
+            return _characterRepository.GetCharacterById(characterId);
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<Character>> GetCharacter()
         {
-            return Ok(_characterRepository.GetAll());
+            return Ok(_characterRepository.GetAllCharacter());
         }
 
         [HttpPut("{characterId}")]
         public ActionResult UpdateCharacter(UpdateCharacterDto characterDto, int characterId)
         {
-            _characterRepository.Update(characterDto, characterId);
+            _characterRepository.UpdateCharacter(characterDto, characterId);
 
             return NoContent();
         }
         [HttpDelete("{characterId}")]
         public ActionResult DeleteCharacter(int characterId)
         {
-            _characterRepository.Delete(characterId);
+            _characterRepository.DeleteCharacter(characterId);
             return NoContent();
         }
     }
