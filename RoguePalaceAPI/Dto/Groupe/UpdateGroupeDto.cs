@@ -2,5 +2,8 @@
 {
     public class UpdateGroupeDto
     {
+        public string Name { get; set; }
+        public int NombreParticipant { get; set; }
+        public string Logo { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace RoguePalaceAPI.Models
         public int GroupeId { get; set; }
         [ForeignKey("GroupeId")]
 
-
+        public string Pseudo { get; set; }
 
     }
 }
