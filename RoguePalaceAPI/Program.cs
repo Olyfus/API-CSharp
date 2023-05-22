@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RoguePalaceAPI.DBContext;
-using RoguePalaceAPI.Dto.User;
 using RoguePalaceAPI.Models;
 using RoguePalaceAPI.Repositories;
 using RoguePalaceAPI.Settings;
@@ -37,23 +36,26 @@ builder.Services.AddIdentity<User, Roles>(options =>
     .AddEntityFrameworkStores<RoguePalaceDBContext>()
     .AddDefaultTokenProviders();
 
+builder.Services.AddScoped<IUserRepositories, UserRepositories>();
+builder.Services.AddScoped<IGroupeRepositories, GroupeRepositories>();
+builder.Services.AddScoped<ICharacterRepositories, CharacterRepositories>();
 
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false)
     .Build();
 
 builder.Services.Configure<JwtSettings>(configuration.GetSection("Jwt"));
+
 var jwtSettings = configuration.GetSection("Jwt").Get<JwtSettings>();
 
-builder.Services.AddScoped<IUserRepositories, UserRepositories>();
-builder.Services.AddScoped<IGroupeRepositories, GroupeRepositories>();
-builder.Services.AddScoped<ICharacterRepositories, CharacterRepositories>();
+builder.Services.AddAuth(jwtSettings);
 
 builder.Services.AddDbContext<RoguePalaceDBContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
+var app = builder.Build();
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -64,7 +66,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseAuth();
+
+app.UseCors("AllowAll");
 
 app.MapControllers();
 
