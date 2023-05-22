@@ -21,7 +21,11 @@ namespace RoguePalaceAPI.Controllers
         {
             Character character = new Character
             {
-
+                Name = characterDto.Name,
+                Level = characterDto.Level,
+                GroupeId = characterDto.GroupeId,
+                Race = characterDto.Race,
+                Class = characterDto.Class,
             };
 
             _characterRepository.CreateCharacter(character);
