@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0vxotQ1GkGj6Uvk7sZfFHdjGEPdHkcYFrdByiyRxh7QHBvWx/ghjzKTiycaKJp/4ibLMYcgg8LQ+lgJvrCFHxg==",
+  "dgSpecHash": "l1Ewzp33WZNK+mgeDUnx7QnuRlj82KqMSz6HoNLaBCnxQDSVkJNv1Aa6ZamupZU83xKZhFq74CCQ8s6y2dZoIw==",
   "success": true,
-  "projectFilePath": "D:\\Cours\\SIO 2\\POO\\C#\\RoguePalace\\RoguePalaceAPI\\RoguePalaceAPI\\RoguePalaceAPI.csproj",
+  "projectFilePath": "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\csharp\\API-CSharp\\RoguePalaceAPI\\RoguePalaceAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adrien Plasse\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Adrien Plasse\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

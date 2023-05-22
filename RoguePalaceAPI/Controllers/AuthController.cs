@@ -1,6 +1,7 @@
 ﻿using RoguePalaceAPI.Dto.User;
 using RoguePalaceAPI.Models;
 using RoguePalaceAPI.Settings;
+using RoguePalaceAPI.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;

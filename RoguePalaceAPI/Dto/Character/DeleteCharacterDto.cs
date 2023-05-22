@@ -2,5 +2,6 @@
 {
     public class DeleteCharacterDto
     {
+        public string Id { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace RoguePalaceAPI.Profiles
     {
         public CharacterProfiles()
         {
-            CreateMap<CreateCharacterDto, CharacterRepositories>;
+           // CreateMap<CreateCharacterDto, CharacterRepositories>;
         }
     }
 }

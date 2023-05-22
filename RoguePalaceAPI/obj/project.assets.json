@@ -3108,11 +3108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cours\\SIO 2\\POO\\C#\\RoguePalace\\RoguePalaceAPI\\RoguePalaceAPI\\RoguePalaceAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\csharp\\API-CSharp\\RoguePalaceAPI\\RoguePalaceAPI.csproj",
       "projectName": "RoguePalaceAPI",
-      "projectPath": "D:\\Cours\\SIO 2\\POO\\C#\\RoguePalace\\RoguePalaceAPI\\RoguePalaceAPI\\RoguePalaceAPI.csproj",
+      "projectPath": "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\csharp\\API-CSharp\\RoguePalaceAPI\\RoguePalaceAPI.csproj",
       "packagesPath": "C:\\Users\\Adrien Plasse\\.nuget\\packages\\",
-      "outputPath": "D:\\Cours\\SIO 2\\POO\\C#\\RoguePalace\\RoguePalaceAPI\\RoguePalaceAPI\\obj\\",
+      "outputPath": "C:\\Users\\Adrien Plasse\\Documents\\GitHub\\csharp\\API-CSharp\\RoguePalaceAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Adrien Plasse\\AppData\\Roaming\\NuGet\\NuGet.Config",
